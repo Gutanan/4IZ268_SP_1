@@ -9,7 +9,68 @@
     justify-content: center;
     display: flex;
     flex-flow: row wrap;
-    flex: 0 0 70%;
+    flex: 0 0 100%;
+    flex-wrap: wrap;
+}
+.top_navigation {
+    overflow: hidden;
+    display: flex;
+    border-bottom: solid black;
+    flex-wrap: wrap;
+    position: fixed;
+    justify-content: space-around;
+    background-color: #bababa;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+}
+
+.logo_in_navigation {
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.logo_in_navigation img{
+    border: 5px;
+    height: 50px;
+    cursor: pointer;
+
+}
+
+.top_navigation_content {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    background-color: #bababa;
+    justify-content: space-around;
+    float: right;
+    margin-left: 100px;
+
+}
+
+.top_navigation_content a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 20px 16px;
+    background-color: #bababa;
+    text-decoration: none;
+}
+
+.top_navigation_content a:hover{
+    background-color: green;
+    color: #f2f2f2;
+}
+
+.top_navigation_content a.active{
+    background-color: grey;
+    color: white;
+}
+
+.top_navigation_content a.menu_sign_up{
+    background-color: lime;
+    color: black;
 }
 
 .navigation_two {
@@ -18,6 +79,7 @@
     flex-flow: row wrap;
     flex: 0 0 70%;
     gap: 10px;
+    margin-top: 60px;
 }
 
 .navigation_two_cell {
@@ -43,7 +105,7 @@ text-align: center;
 }
 
 .news {
-    background: grey;
+    background: #bababa;
     justify-content: center;
     display: flex;
     flex-flow: row wrap;
@@ -69,8 +131,7 @@ p {
     padding: 20px;
     display: flex;
     color: white;
-    justify-content: left;
-    flex: 0 0 50%;
+    justify-content: space-between;
 }
 
 .sign_up_button {
@@ -84,13 +145,30 @@ p {
     color: white;
     background: black;
     padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 
-button {
-    text-align: center;
+.sign_up_button .button {
+    width: 150px;
+    height: 40px;
+    color: black;
+    background-color: lime;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
     color: white;
-    background: lime;
+    background: black;
     border-radius: 60px;
     border: none;
     padding: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
 }
+

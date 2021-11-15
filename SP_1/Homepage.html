@@ -5,26 +5,37 @@
     <title>Brutt - web</title>
     <link rel="stylesheet" href="Style.css">
 </head>
+
 <body>
-<h1>Tábor Brutt</h1>
-<p>Ahoj toto bude web ohledně tábora Brutt</p>
-<p>Zároveň si vyzkoušíme propojení Git repository</p>
+
 <div class="site_content">
+    <div class="top_navigation">
+        <div class="logo_in_navigation">
+            <a href="Homepage.html"><img alt="Logo BRUTT" src="brutt%20logo.png"></a>
+        </div>
+        <div class="top_navigation_content">
+            <a class="active" href="Homepage.html">Homepage</a>
+            <a href="About_camp.html">O táboře</a>
+            <a href="Documents.html">Dokumenty</a>
+            <a href="Contacts.html">Kontakty</a>
+            <a class="menu_sign_up" href="Sign_in.html">Přihlášení</a>
+        </div>
+    </div>
     <div class="navigation_two">
         <div class="navigation_two_cell" style="background: green">
             <p>Jak to u nás chodí</p>
             <h2>Vše o táboře</h2>
-            <button>Informace</button>
+            <a class="button" href="About_camp.html">Informace</a>
         </div>
         <div class="navigation_two_cell" style="background: orange">
             <p>A jak to bude letos?</p>
             <h2>Aktuální ročník</h2>
-            <button>Zobrazit</button>
+            <a class="button">Zobrazit</a>
         </div>
         <div class="navigation_two_cell" style="background: lime">
             <p>Chci poslat svoje dítko</p>
             <h2>Přihláška</h2>
-            <button>Přihlásit</button>
+            <a class="button" href="Sign_in.html">Přihlásit</a>
         </div>
     </div>
     <div class="news">
@@ -83,11 +94,10 @@
                 Brutt</p>
         </div>
         <div class="sign_up_button">
-            <button>Přihlásit</button>
+            <a class="button" href="Sign_in.html">Přihlásit</a>
         </div>
     </div>
     <div class="contact">
-        <h2>Ozvěte se nám</h2>
         <div class="contact_cell">
             <p>+420 254 256 365</p>
         </div>
