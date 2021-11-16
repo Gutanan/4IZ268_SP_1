@@ -1,5 +1,5 @@
 .site_content_columns {
-    justify-content: center;
+    justify-content: space-evenly;
     display: flex;
     flex-flow: row wrap;
     flex: 0 0 70%;
@@ -8,10 +8,12 @@
 .site_content {
     justify-content: center;
     display: flex;
+
     flex-flow: row wrap;
     flex: 0 0 100%;
     flex-wrap: wrap;
     margin-top: 60px;
+    flex-direction: column;
 }
 .top_navigation {
     overflow: hidden;
@@ -93,11 +95,7 @@
     min-height: 200px;
 }
 
-.navigation_two_cell p {
-text-align: center;
-}
-
-.navigation_two_cell h2 {
+.navigation_two_cell p, h2 {
     text-align: center;
 }
 
@@ -110,15 +108,25 @@ text-align: center;
     justify-content: center;
     display: flex;
     flex-flow: row wrap;
-    flex: 0 0 60%;
     padding: 10px;
-    max-width: 820px;
     margin: 10px;
+    max-width: 90%;
+    align-self: center;
 }
 .column {
-    max-width: 400px;
+    max-width: 500px;
     margin: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
 }
+
+.column img {
+    align-self: center;
+    width: 500px;
+}
+
 .paragraf h2{
     color: green;
 }
@@ -177,6 +185,7 @@ p {
     border: 3px solid gray;
     width: 100%;
     border-collapse: collapse;
+    max-width: 500px;
 }
 
 .table table th, td {
@@ -193,3 +202,40 @@ p {
     justify-content: center;
 }
 
+.download_doc{
+    background-color: #bababa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+    justify-content: space-evenly;
+}
+
+.download_doc img {
+    width: 200px;
+}
+
+.info_doc {
+    padding: 10px;
+}
+
+.document {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+    border: #bababa solid 2px;
+}
+
+h1 {
+    align-self: center;
+}
+
+.info_img img{
+    width: 100px;
+
+}
+.info_img {
+    align-self: center;
+}
