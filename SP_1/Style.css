@@ -129,6 +129,7 @@
 
 .paragraf h2{
     color: green;
+    align-self: flex-start;
 }
 
 p {
@@ -192,10 +193,25 @@ p {
     border: 2px solid gray;
 }
 
+.table td {
+    padding: 5px;
+}
+
 .information {
     display: flex;
     flex-wrap: nowrap;
     gap: 30px;
+    max-width: 1000px;
+    border-bottom: 2px solid #bababa;
+
+}
+
+.all_informations {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 .info_img {
@@ -209,11 +225,16 @@ p {
     align-items: center;
     height: 200px;
     width: 200px;
+    min-width: 200px;
     justify-content: space-evenly;
 }
 
-.download_doc img {
+.download_doc .logo_word {
     width: 200px;
+}
+
+.download_doc .logo_pdf {
+    width: 75px;
 }
 
 .info_doc {
@@ -239,3 +260,4 @@ h1 {
 .info_img {
     align-self: center;
 }
+
