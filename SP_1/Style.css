@@ -1,3 +1,9 @@
+body {
+    font-family: Nunito,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
 .site_content_columns {
     justify-content: space-evenly;
     display: flex;
@@ -62,7 +68,7 @@
 }
 
 .top_navigation_content a:hover{
-    background-color: green;
+    background-color: #ED7E07;
     color: #f2f2f2;
 }
 
@@ -72,7 +78,7 @@
 }
 
 .top_navigation_content a.menu_sign_up{
-    background-color: lime;
+    background-color: #82DD03;
     color: black;
 }
 
@@ -81,7 +87,7 @@
     display: flex;
     flex-flow: row wrap;
     flex: 0 0 70%;
-    gap: 10px;
+    gap: 20px;
 
 }
 
@@ -91,10 +97,11 @@
     flex-direction: column;
     flex: 0 0 15%;
     padding: 10px;
-    min-width: 200px;
-    min-height: 200px;
+    min-width: 250px;
+    min-height: 250px;
+    max-width: 250px;
+    max-height: 250px;
 }
-
 .navigation_two_cell p, h2 {
     text-align: center;
 }
@@ -112,9 +119,10 @@
     margin: 10px;
     max-width: 90%;
     align-self: center;
+    flex-direction: column;
 }
 .column {
-    max-width: 500px;
+    max-width: 600px;
     margin: 30px;
     display: flex;
     flex-direction: column;
@@ -124,11 +132,11 @@
 
 .column img {
     align-self: center;
-    width: 500px;
+    width: 600px;
 }
 
 .paragraf h2{
-    color: green;
+    color: #008f00;
     align-self: flex-start;
 }
 
@@ -137,11 +145,17 @@ p {
 }
 
 .sign_up {
-    background: green;
+    background: #008f00;
     padding: 20px;
     display: flex;
     color: white;
     justify-content: space-between;
+}
+
+.sign_up_text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .sign_up_button {
@@ -165,7 +179,7 @@ p {
     width: 150px;
     height: 40px;
     color: black;
-    background-color: lime;
+    background-color: #82DD03;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -186,7 +200,8 @@ p {
     border: 3px solid gray;
     width: 100%;
     border-collapse: collapse;
-    max-width: 500px;
+    max-width: 600px;
+    padding-bottom: 10px;
 }
 
 .table table th, td {
@@ -203,7 +218,12 @@ p {
     gap: 30px;
     max-width: 1000px;
     border-bottom: 2px solid #bababa;
+    justify-content: center;
+    padding: 10px;
+}
 
+.information:last-child {
+    border-bottom: none;
 }
 
 .all_informations {
@@ -211,7 +231,6 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
 }
 
 .info_img {
@@ -243,10 +262,11 @@ p {
 
 .document {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: nowrap;
     align-items: center;
-    border: #bababa solid 2px;
+    border: #bababa solid 4px;
+    max-height: 200px;
 }
 
 h1 {
@@ -259,5 +279,42 @@ h1 {
 }
 .info_img {
     align-self: center;
+}
+
+.sign_up_table table{
+    padding-bottom: 10px;
+}
+
+.sign_up_img {
+    display: flex;
+    justify-content: center;
+}
+
+.sign_up_img img {
+    width: 150px;
+}
+
+.bottom_menu {
+    width: 100%;
+}
+
+.mapouter {
+    position: relative;
+    text-align: right;
+    height: 600px;
+    width: 600px;
+}
+
+.google_map{
+    overflow: hidden;
+    background: none;
+    height: 600px;
+    width: 600px;
+}
+
+.google_map iframe{
+    height: 600px;
+    width: 600px;
+    border: none;
 }
 
