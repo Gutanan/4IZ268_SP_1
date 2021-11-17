@@ -298,8 +298,7 @@ h1 {
     width: 100%;
 }
 
-.mapouter {
-    position: relative;
+.map {
     text-align: right;
     height: 600px;
     width: 600px;
@@ -318,3 +317,38 @@ h1 {
     border: none;
 }
 
+@media print {
+    .top_navigation{
+        display: none;
+    }
+
+    .bottom_menu {
+        display: none;
+    }
+
+    .navigation_two {
+        display: none;
+    }
+
+    .column {
+        display: block;
+        page-break-inside: auto;
+    }
+
+    img {
+        page-break-inside: avoid;
+    }
+
+    h2 {
+        page-break-after: avoid;
+    }
+
+    .table {
+        page-break-inside: avoid;
+        padding-top: 2px;
+    }
+
+    .document {
+        border: none;
+    }
+}
